@@ -22,5 +22,17 @@ namespace EmployeePro.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool isMaxScreen {
+            get {
+                return ((bool)(this["isMaxScreen"]));
+            }
+            set {
+                this["isMaxScreen"] = value;
+            }
+        }
     }
 }
