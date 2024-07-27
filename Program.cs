@@ -1,3 +1,5 @@
+using EmployeePro.GUI.UsersGui;
+
 namespace EmployeePro
 {
     internal static class Program

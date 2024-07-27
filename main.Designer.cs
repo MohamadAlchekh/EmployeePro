@@ -218,6 +218,6 @@
         private Button buttonAbout;
         private Button buttonHelp;
         private ToolTip toolTip1;
-        private Panel panelContainer;
+        public Panel panelContainer;
     }
 }
