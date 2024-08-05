@@ -12,12 +12,18 @@ namespace EmployeePro.GUI.UsersGui
 {
     public partial class AddUserForm : Form
     {
-        public AddUserForm()
+        public AddUserForm(main main)
         {
             InitializeComponent();
+            this.Owner = main;
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddUserForm_Load(object sender, EventArgs e)
         {
 
         }

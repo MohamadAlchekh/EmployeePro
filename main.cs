@@ -9,7 +9,7 @@ namespace EmployeePro
         {
             InitializeComponent();
             pageHelper = new PageHelper(this);
-            
+
             // Set Home Page
             pageHelper.SetPage(GUI.HomeGui.HomeUserControl.Instance());
             // Get and Wet Window State
@@ -59,6 +59,12 @@ namespace EmployeePro
         private void buttonHome_Click(object sender, EventArgs e)
         {
             pageHelper.SetPage(GUI.HomeGui.HomeUserControl.Instance());
+        }
+
+        private void buttonUsers_Click(object sender, EventArgs e)
+        {
+            pageHelper.SetPage(GUI.UsersGui.UsersUserControl.Instance(this));
+
         }
     }
 }

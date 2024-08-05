@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace EmployeePro.GUI.UsersGui
 {
@@ -14,25 +15,38 @@ namespace EmployeePro.GUI.UsersGui
     {
 
         private static readonly UsersUserControl? usersUserControl;
+        private AddUserForm addUserForm;
+        private static main _main;
 
         public UsersUserControl()
         {
             InitializeComponent();
         }
 
-        public static UsersUserControl Instance()
+        public static UsersUserControl Instance(main main)
         {
+            _main = main;
             return usersUserControl ?? new UsersUserControl();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-
+            if (addUserForm == null || addUserForm.IsDisposed)
+            {
+                addUserForm = new AddUserForm(_main);
+                addUserForm.Show();
+            }
+            else
+            {
+                addUserForm.Focus();
+                PlaySoundEffect();
+            }
+        }
+        private void PlaySoundEffect()
+        {
+            string soundFilePath = @"C:\EmployeePro\Resources\Background_Sound_Effect.wav";
+            System.Media.SoundPlayer soundPlayer = new SoundPlayer(soundFilePath);
+            soundPlayer.Play();
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)

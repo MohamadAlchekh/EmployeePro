@@ -144,7 +144,6 @@
             buttonSearch.Size = new Size(46, 47);
             buttonSearch.TabIndex = 6;
             buttonSearch.UseVisualStyleBackColor = true;
-            buttonSearch.Click += button4_Click;
             // 
             // dataGridView1
             // 

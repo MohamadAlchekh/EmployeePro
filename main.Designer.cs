@@ -120,6 +120,7 @@
             buttonUsers.Text = "      Users ";
             toolTip1.SetToolTip(buttonUsers, "Manage Users");
             buttonUsers.UseVisualStyleBackColor = true;
+            buttonUsers.Click += buttonUsers_Click;
             // 
             // buttonReports
             // 
