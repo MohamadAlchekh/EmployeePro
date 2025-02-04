@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmployeePro.GUI.UsersGui;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace EmployeePro.GUI.HomeGui
 {
     public partial class HomeUserControl : UserControl
     {
-        private static readonly HomeUserControl? homeUserControl;
+        private static  HomeUserControl? homeUserControl;
         public HomeUserControl()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace EmployeePro.GUI.HomeGui
             
         public static HomeUserControl Instance()
         {
-            return homeUserControl?? new HomeUserControl();
-        }
-    }
+            return homeUserControl??(homeUserControl = new HomeUserControl());
+		}
+	}
 }

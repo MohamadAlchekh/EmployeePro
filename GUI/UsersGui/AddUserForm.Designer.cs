@@ -78,18 +78,18 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(comboBoxRole);
+            groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(textBoxPassword);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(textBoxUsername);
+            groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(textBoxFullName);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(textBoxPhoneNo);
-            groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(label12);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(265, 371);
@@ -165,7 +165,7 @@
             // 
             // textBoxPhoneNo
             // 
-            textBoxPhoneNo.Location = new Point(13, 281);
+            textBoxPhoneNo.Location = new Point(6, 133);
             textBoxPhoneNo.Name = "textBoxPhoneNo";
             textBoxPhoneNo.Size = new Size(244, 29);
             textBoxPhoneNo.TabIndex = 4;
@@ -173,7 +173,7 @@
             // label11
             // 
             label11.ForeColor = Color.Red;
-            label11.Location = new Point(133, 247);
+            label11.Location = new Point(126, 99);
             label11.Name = "label11";
             label11.Size = new Size(14, 17);
             label11.TabIndex = 1;
@@ -191,7 +191,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(16, 257);
+            label12.Location = new Point(9, 109);
             label12.Name = "label12";
             label12.Size = new Size(128, 21);
             label12.TabIndex = 0;
@@ -203,7 +203,7 @@
             comboBoxRole.Enabled = false;
             comboBoxRole.FormattingEnabled = true;
             comboBoxRole.Items.AddRange(new object[] { "Manager", "User", "Reader" });
-            comboBoxRole.Location = new Point(9, 62);
+            comboBoxRole.Location = new Point(13, 281);
             comboBoxRole.Name = "comboBoxRole";
             comboBoxRole.Size = new Size(244, 29);
             comboBoxRole.TabIndex = 5;
@@ -211,7 +211,7 @@
             // label7
             // 
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(88, 28);
+            label7.Location = new Point(92, 247);
             label7.Name = "label7";
             label7.Size = new Size(14, 17);
             label7.TabIndex = 10;
@@ -220,7 +220,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(9, 38);
+            label13.Location = new Point(13, 257);
             label13.Name = "label13";
             label13.Size = new Size(87, 21);
             label13.TabIndex = 9;
@@ -229,7 +229,7 @@
             // checkBoxSecondaryUser
             // 
             checkBoxSecondaryUser.AutoSize = true;
-            checkBoxSecondaryUser.Location = new Point(12, 250);
+            checkBoxSecondaryUser.Location = new Point(9, 31);
             checkBoxSecondaryUser.Name = "checkBoxSecondaryUser";
             checkBoxSecondaryUser.Size = new Size(191, 25);
             checkBoxSecondaryUser.TabIndex = 8;
@@ -241,24 +241,24 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Enabled = false;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(9, 281);
+            comboBox1.Location = new Point(6, 62);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(244, 29);
             comboBox1.TabIndex = 9;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(comboBoxRole);
-            groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(comboBox1);
             groupBox2.Controls.Add(checkBoxSecondaryUser);
             groupBox2.Controls.Add(buttonSave);
-            groupBox2.Controls.Add(label13);
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(textBoxAdress);
+            groupBox2.Controls.Add(label11);
+            groupBox2.Controls.Add(label12);
+            groupBox2.Controls.Add(textBoxPhoneNo);
             groupBox2.Controls.Add(label8);
-            groupBox2.Controls.Add(textBoxEmailAdress);
             groupBox2.Controls.Add(label9);
+            groupBox2.Controls.Add(textBoxEmailAdress);
             groupBox2.Location = new Point(310, 12);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(265, 371);
@@ -281,7 +281,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(9, 109);
+            label10.Location = new Point(6, 185);
             label10.Name = "label10";
             label10.Size = new Size(120, 21);
             label10.TabIndex = 11;
@@ -289,7 +289,7 @@
             // 
             // textBoxAdress
             // 
-            textBoxAdress.Location = new Point(9, 209);
+            textBoxAdress.Location = new Point(6, 281);
             textBoxAdress.Name = "textBoxAdress";
             textBoxAdress.Size = new Size(244, 29);
             textBoxAdress.TabIndex = 7;
@@ -297,7 +297,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(12, 185);
+            label8.Location = new Point(9, 257);
             label8.Name = "label8";
             label8.Size = new Size(78, 21);
             label8.TabIndex = 6;
@@ -305,7 +305,7 @@
             // 
             // textBoxEmailAdress
             // 
-            textBoxEmailAdress.Location = new Point(9, 133);
+            textBoxEmailAdress.Location = new Point(6, 209);
             textBoxEmailAdress.Name = "textBoxEmailAdress";
             textBoxEmailAdress.Size = new Size(244, 29);
             textBoxEmailAdress.TabIndex = 6;
@@ -313,7 +313,7 @@
             // label9
             // 
             label9.ForeColor = Color.Red;
-            label9.Location = new Point(123, 99);
+            label9.Location = new Point(120, 175);
             label9.Name = "label9";
             label9.Size = new Size(14, 17);
             label9.TabIndex = 4;

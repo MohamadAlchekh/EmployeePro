@@ -120,6 +120,24 @@ namespace EmployeePro.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Click on add button to add data.
+        /// </summary>
+        internal static string EmptyDataStateDescription {
+            get {
+                return ResourceManager.GetString("EmptyDataStateDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Available Data.
+        /// </summary>
+        internal static string EmptyDataStateTitle {
+            get {
+                return ResourceManager.GetString("EmptyDataStateTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Graph_Report {
@@ -172,6 +190,16 @@ namespace EmployeePro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoadingGif {
+            get {
+                object obj = ResourceManager.GetObject("LoadingGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Microsoft_Excel_2019_1 {
             get {
                 object obj = ResourceManager.GetObject("Microsoft_Excel_2019_1", resourceCulture);
@@ -210,6 +238,24 @@ namespace EmployeePro.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Looks like you&apos;re having connection issue, press refresh.
+        /// </summary>
+        internal static string ServerErrorDescription {
+            get {
+                return ResourceManager.GetString("ServerErrorDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Connection Error.
+        /// </summary>
+        internal static string ServerErrorTitle {
+            get {
+                return ResourceManager.GetString("ServerErrorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Settings {
@@ -225,6 +271,16 @@ namespace EmployeePro.Properties {
         internal static System.Drawing.Bitmap Stack_of_Money {
             get {
                 object obj = ResourceManager.GetObject("Stack_of_Money", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Update_Left_Rotation {
+            get {
+                object obj = ResourceManager.GetObject("Update_Left_Rotation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
